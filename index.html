@@ -12,12 +12,12 @@
         <img src="drive-download-20220304T160041Z-001/logos/circle.svg" alt="logo" class="logo1">
         <nav>
         <ul class="nav_links">
-            <li><a href="#" class="navI">Home</a></li>
-            <li><a href="#" class="navII">Projects</a></li>
-            <li><a href="#" class="navIII">Services</a></li>
+            <li><a href="#" target="_blank" class="navI">Home</a></li>
+            <li><a href="#" target="_blank" class="navII">Projects</a></li>
+            <li><a href="#" target="_blank" class="navIII">Services</a></li>
         </ul>
     </nav>
-    <a href="#" class="contact"><button>Contact Us</button></a>
+    <a href="#" target="_blank" class="contact"><button>Contact Us</button></a>
     </header>
    <div class="heroSection">
        <div class="heroText">
@@ -26,9 +26,12 @@
     We design and develop astonishing website <br> and mobile apps.</p>
     <button class="getInTouch">Get in touch</button>
     <button class="seeOurWork">See our work</button>
+        </div>
+    <div class="heroPics">
+       <!-- <img class="absolute" src="drive-download-20220304T160041Z-001/hero-section/card-1.png" alt="card" class="card1">-->
+        <!--<img class="absolute" src="drive-download-20220304T160041Z-001/hero-section/card-2.png" alt="cardII">-->
+        <img src="drive-download-20220304T160041Z-001/hero-section/hero-image.png" alt="hero" class="heroImg">
     </div>
-    <!--<img src="drive-download-20220304T160041Z-001/hero-section/card-1.png" alt="card" class="card1">-->
-    <img src="drive-download-20220304T160041Z-001/hero-section/hero-image.png" alt="hero" class="heroImg">
    </div>
    <div class="clients">
        <img class="airbnb" src="drive-download-20220304T160041Z-001/logos/airbnb-logo.svg" alt="airBnB">
@@ -46,11 +49,45 @@
        <p class="quote">"Circle helped us through every stage of our startup. <br> We really enjoyed working with you."</p>
        <div class="testimonial">
            <img class="profileImg"src="drive-download-20220304T160041Z-001/testimonial-section/profile.png" alt="profileImg"> 
-        <div class="name">Kristin Watson <br> <span class="booking">
-        Booking.com</span></div>
+        <div class="name">Kristin Watson <br> <a href="https://www.booking.com/22" target="_blank" class="booking">
+        Booking.com</a></div>
         </div>
     </div>
-    <script src="./index.js"></script>
+    <div class="empty"> </div>
+    <h3 class="ourServices">Our Services</h3>
+    <div class="cards">
+        <div class="cardI">
+            <img class="pen"src="drive-download-20220304T160041Z-001/services-section/icons/1.svg" alt="penSymbol"> 
+            <h4>User Interface Design</h4>
+            <p class="description">Circle provides you with a stunning <br> user interface design that
+            is <br> accessible to everyone.</p>
+            <a href="#" target="_blank" class="learnMore">Learn More</a>
+        </div>
+        <div class="cardII">
+            <img class="pointer" src="drive-download-20220304T160041Z-001/services-section/icons/2.svg" alt="pointer">
+            <h4>User Experience Design</h4>
+            <p class="description">Circle always focuses on delivering <br>
+             the best user experience to your <br> customers.</p>
+            <a href="#" target="_blank" class="learnMore">Learn More</a>
+        </div>
+        <div class="cardIII">
+            <img class="code" src="drive-download-20220304T160041Z-001/services-section/icons/3.svg" alt="codeDiv">
+            <h4>Application Development</h4>
+            <p class="description">We develop high-quality mobile and <br> web applications using the latest <br> 
+                technology stack.</p>
+            <a href="#" target="_blank" class="learnMore">Learn More</a>
+        </div>
+    </div>
+    <div class="newsletter">
+        <div class="box">
+            <form>
+                <h3>Do you have any questions?</h3>
+                <p class="helpText"> Let us help you!</p>
+                <input class="contactForm" type="text" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>    
     <footer class="footer">
         <img class="footerLogo" src="drive-download-20220304T160041Z-001/logos/circle.svg" alt="circleLogo">
         <div class="address" >2972 Westheimer Rd. Santa Ana, <br> 
@@ -62,5 +99,6 @@
             <a href="#" class="projects">Projects</a>
             <a href="#" class="policy">Privacy Policy</a>
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>
