@@ -14,6 +14,135 @@ utilizar: var(--nombredevar)*/
   --other: #ecf7ff;
   --mustard: #ffc600;
 }
+@media only screen and (max-width: 600px) {
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+  ul {
+    margin-bottom: 4px;
+    margin-top: 3px;
+  }
+  .logo1 {
+    display: none;
+  }
+  .header .contact {
+    margin-top: 4px;
+  }
+  .heroSection {
+    margin: 0px 150px 0px 150px;
+    /*
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-left:25%; */
+  }
+  .heroText {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+  }
+  .heroImg {
+    display: none;
+  }
+  .clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 25%;
+    margin-bottom: 20px;
+  }
+  .google,
+  .microsoft,
+  .fedex,
+  .amazon {
+    margin-top: 30px;
+  }
+
+  .recentProjects {
+    display: none;
+    /*text-align: center;
+  white-space: nowrap;*/
+  }
+  /*
+.hearClients {
+  width:100%;
+    display: flex;
+    flex-direction: column;
+    inline-size: max-content;
+    
+}*/
+  .memojiI {
+    display: none;
+  }
+  .ourServices {
+    display: flex;
+    flex-direction: column;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 20px 10px 30px var(--greyOne);
+  }
+  .contactForm {
+    max-width: initial;
+    position: relative;
+    min-inline-size: -webkit-fill-available;
+    margin: 2%;
+  }
+  .box button {
+    max-width: initial;
+    position: relative;
+    min-inline-size: -webkit-fill-available;
+    margin: 15%;
+  }
+  .footer {
+    position: left;
+    margin: 0px !important;
+  }
+  /*PREGUNTAR COMO PONER A LA DERECHA EL FOOTER.*/
+
+  .simplifyText h1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerText {
+    display: flex !important;
+    flex-direction:column !important;
+  }
+  .heroP {
+    width:100%;
+  }
+  .contact button {
+    display: none;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .finalForm {
+    margin-left: 76px !important;
+    margin-top: 20px !important;
+  }
+
+  .inputInfo {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  /*
+  .I h4 {
+    background-color: white;
+  }*/
+  .I h4 {
+    background-color: white !important;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -28,7 +157,7 @@ a,
 button {
   text-decoration: none;
 }
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,7 +214,7 @@ button {
   position: relative;
   height: 500px;
 }
-.heroCards .absolute{
+.heroCards .absolute {
   position: absolute;
   left: -62px;
   top: -10px;
@@ -94,10 +223,10 @@ button {
 }
 .heroCards .absoluteII {
   position: absolute;
-    right: -77px;
-    bottom: -74px;
-    width: 50%;
-    background: none;
+  right: -77px;
+  bottom: -74px;
+  width: 50%;
+  background: none;
 }
 /*
 .card1 {
@@ -259,37 +388,42 @@ h3 {
 */
 .cards {
   display: flex;
-  flex-direction: row !important;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-bottom: 50px;
 }
 .cardI,
 .cardII,
 .cardIII {
   background-color: white;
-  height: 300px;
-  width: 500px;
-  overflow: hidden;
+  height: 350px;
+  margin: 50px 0px 50px 30px;
+  text-align: left;
+  word-break: keep-all;
+  box-shadow: 20px 10px 30px var(--greyOne);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 50px 30px 50px 150px;
-  text-align: center;
-  word-break: keep-all;
 }
+
 .pen,
 .pointer,
 .code {
   border-radius: 50px !important;
   height: 60px;
   width: 50px;
-  margin-left: 30px;
   background-color: var(--other);
+  margin-right: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: inherit;
 }
 .description,
-h4 {
+.cards h4,
+.cards .learnMore {
   background-color: white;
   text-align: left;
-  margin-left: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 .learnMore {
   background-color: white;
@@ -303,7 +437,7 @@ h4 {
 .otherProjects {
   color: var(--darkTwo) !important;
   background-color: var(--lightTwo);
-  margin: 200px 0px 30px 145px;
+  margin: 100px 0px 30px 145px;
 }
 h4 {
   font-size: 24px;
@@ -330,8 +464,8 @@ h4 {
   font-weight: normal !important;
 }
 .box .contactForm {
-  height:80px !important;
-  width:400px !important;
+  height: 80px !important;
+  width: 400px !important;
   border: none;
 }
 .box h3 {
@@ -348,18 +482,18 @@ form,
   color: var(--greyOne);
   font-size: 20px;
 }
-.contactForm{
+.contactForm {
   background-image: url("drive-download-20220304T160041Z-001/newsletter/icon/mail.svg");
   background-size: 40;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: 20px;
   height: 40px;
   width: 200px;
   text-align: center;
   margin-right: 10px;
 }
 .simplifyText {
-  margin: 100px 120px 0 120px;
+  margin: 100px 120px 0px 120px;
   padding-bottom: 20px;
   background-color: var(--lightTwo);
 }
@@ -372,13 +506,18 @@ form,
   background-color: var(--lightTwo);
 }
 .imgI {
+  /*
   height: 600px;
   width: 1040px;
   margin: 20px 40px 20px 0px;
-  margin-right: 20px;
+  margin-right: 20px;*/
+  max-width: 100%;
+  height: auto;
+  margin: auto;
 }
-.simplifyText h1{
-  color:var(--darkTwo);
+.simplifyText h1 {
+  color: var(--darkTwo);
+  margin-top: 50px;
 }
 .simplifyText p {
   font-weight: lighter !important;
@@ -397,17 +536,19 @@ form,
   gap: 10px;
   text-align: left;
   margin: 0 30px 60px 30px;
-  border: #072ac8 solid;
-  background-color: var(--lightTwo);
+  /*border: #072ac8 solid;*/
+  background-color: white;
 }
 .cardImg h4 {
   text-align: left !important;
   margin-left: 0;
+  background-color: white;
 }
 
 .cardImg p {
   color: var(--logoColor);
   font-weight: lighter !important;
+  background-color: white;
 }
 
 .cardImg div {
@@ -415,35 +556,41 @@ form,
   margin-bottom: 30px;
   font-weight: lighter !important;
 }
-#personalInfo, .inputInfo{
+#personalInfo,
+.inputInfo {
   display: grid;
-  grid-template-areas: "areaI" "areaII areaII"
-  "areaIV" "areaV";
+  grid-template-areas:
+    "areaI" "areaII areaII"
+    "areaIV" "areaV";
   margin: 30px 60px 60px 60px;
   background-color: var(--lightTwo) !important;
-  width:90%;
+  width: 90%;
   gap: 20px;
 }
 
-#name, #phone, #email {
+#name,
+#phone,
+#email {
   background-color: #dee2e4;
   border: none;
   font-weight: lighter !important;
-  height:40px;
+  height: 40px;
 }
-#email, #phone {
+#email,
+#phone {
   width: 490px;
 }
 .joined {
   display: grid;
-  grid-template-areas: "right left"
-  "rightI leftI";
+  grid-template-areas:
+    "right left"
+    "rightI leftI";
   justify-content: space-between;
   text-align: left !important;
   align-items: left;
-  gap:10px;
+  gap: 10px;
 }
-.finalForm{
+.finalForm {
   margin-left: 115px;
   margin-top: 70px;
 }
