@@ -70,10 +70,6 @@ utilizar: var(--nombredevar)*/
     margin: 15px 0px;
   }
 
-  .recent-projects {
-    /* not done yet*/
-  }
-
   .memojiI {
     display: none;
   }
@@ -119,6 +115,11 @@ utilizar: var(--nombredevar)*/
 
   .header_projects_page .hero_text {
     width: 100%;
+  }
+  .main_image {
+    margin-left: -20px;
+    min-width: 350px;
+    height: 300px;
   }
 
   .card_image {
@@ -276,7 +277,40 @@ button {
   justify-content: space-between;
   margin: 50px 65px;
 }
+/*JAVASCRIPT ELEMENTS */
+.recent_projects {
+  margin-top: 100px;
+}
+.my_js_cards {
+  margin: 50px 0px 100px  0px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 18px;
+}
+.card_0, .card_1, .card_2 {
+  display: grid;
+  height: 450px;
+  background-color: white;
+}
+.card_0 img, .card_1 img, .card_2 img{
+  height: 200px;
+  width: 300px;
+}
+.card_0 h4, .card_1 h4, .card_2 h4 {
+  margin: 0px 30px;
+  font-size: 25px;
 
+}
+.card_0 p, .card_1 p, .card_2 p {
+  margin: 0px 30px;
+  font-weight: normal !important;
+
+}
+.card_0 a, .card_1 a, .card_2 a {
+  margin: 0px 30px;
+  color: var(--logoColor);
+  cursor: pointer;
+}
 /*CLIENT REVIEW */
 
 .client_reviews {
@@ -393,6 +427,7 @@ button {
   text-align: center;
   justify-content: space-around;
   height: 500px;
+  margin-top: 150px;
 }
 .newsletter_cta button {
   height: 80px;
@@ -437,9 +472,10 @@ form,
 }
 
 .main_image {
-  max-width: 100%;
-  height: auto;
-  margin: auto;
+    height: 500px;
+    width: 100%;
+    margin-bottom: 60px;
+    box-shadow: rgba(143, 20, 155, 0.12) 0px 54px 55px, rgba(143, 20, 155, 0.12) 0px -12px 30px, rgba(143, 20, 155, 0.12) 0px 4px 6px, rgba(143, 20, 155, 0.12) 0px 12px 13px, rgba(143, 20, 155, 0.12) 0px -3px 5px;
 }
 
 .service_card_individuals .card_image {
