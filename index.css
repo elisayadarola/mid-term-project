@@ -315,6 +315,7 @@ button {
 /*CLIENT REVIEW */
 
 .client_reviews {
+  height: 600px;
   display: flex;
   flex-direction: column;
   gap: 100px;
@@ -335,29 +336,30 @@ button {
 }
 
 .memoji {
-  height: 100px;
-  width: 100px;
-  position: absolute;
-  align-items: center;
-  float: left;
+  height: 150px;
+  width: 150px;
 }
 .emoji_one {
   position: absolute;
-  bottom: -1000px;
+  bottom: -1100px;
+  
 }
 .emoji_two{
   position: absolute;
-  bottom: -1320px;
+  bottom: -1500px;
+  
 }
 .emoji_three {
   position: absolute;
-  bottom: -1320px;
+  bottom: -1100px;
     right: 0px;
+    
 }
 .emoji_four {
   position: absolute;
-  bottom: -1000px;
+  bottom: -1500px;
   right: 0px;
+  
 }
 /*WIDGET BOOKING.COM PROFILE*/
 
