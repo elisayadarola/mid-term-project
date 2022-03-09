@@ -278,7 +278,7 @@ button {
   margin: 50px 65px;
 }
 /*JAVASCRIPT ELEMENTS */
-.recent_projects {
+.recent_projects { 
   margin-top: 100px;
 }
 .my_js_cards {
@@ -310,7 +310,8 @@ button {
   margin: 0px 30px;
   color: var(--logoColor);
   cursor: pointer;
-}
+} 
+
 /*CLIENT REVIEW */
 
 .client_reviews {
@@ -322,6 +323,7 @@ button {
   justify-content: center;
   background-color: var(--darkTwo);
   background-image: url("drive-download-20220304T160041Z-001/testimonial-section/orbit.png");
+  background-position: relative;
 }
 
 .client_reviews p {
@@ -332,15 +334,31 @@ button {
   color: var(--lightTwo);
 }
 
-.memojiI {
+.memoji {
   height: 100px;
   width: 100px;
   position: absolute;
   align-items: center;
   float: left;
-  background-color: var(--darkTwo);
 }
-
+.emoji_one {
+  position: absolute;
+  bottom: -1000px;
+}
+.emoji_two{
+  position: absolute;
+  bottom: -1320px;
+}
+.emoji_three {
+  position: absolute;
+  bottom: -1320px;
+    right: 0px;
+}
+.emoji_four {
+  position: absolute;
+  bottom: -1000px;
+  right: 0px;
+}
 /*WIDGET BOOKING.COM PROFILE*/
 
 .client_widget {
