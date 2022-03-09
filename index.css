@@ -18,9 +18,10 @@ utilizar: var(--nombredevar)*/
 }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 600px) {
+  /*HEADER SECTION */
 
-  .nav_bar .nav_links{
+  .nav_bar .nav_links {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -34,13 +35,22 @@ utilizar: var(--nombredevar)*/
     display: none;
   }
 
+  /*FOOTER SECTION*/
+  .footer {
+    position: left;
+    margin: 0px !important;
+    place-content: flex-end;
+    align-items: center;
+  }
+
+  /*INDEX HTML*/
   .hero_section {
     width: 75%;
-}
+  }
 
   .heroImg {
     display: none;
-  } 
+  }
 
   .clients {
     display: flex;
@@ -50,7 +60,7 @@ utilizar: var(--nombredevar)*/
     margin-bottom: 20px;
   }
 
-  .client_logos{
+  .client_logos {
     display: flex;
     flex-direction: column;
     width: 65%;
@@ -61,32 +71,27 @@ utilizar: var(--nombredevar)*/
   }
 
   .recent-projects {
+    /* not done yet*/
   }
-  /*
-.hearClients {
-  width:100%;
-    display: flex;
-    flex-direction: column;
-    inline-size: max-content;
-    
-}*/
+
   .memojiI {
     display: none;
   }
-  .our_services_and_projects{
+  .our_services_and_projects {
     display: flex;
     flex-direction: column;
+    margin: 0px;
   }
   .service_cards_main_div {
     display: flex;
     flex-direction: column;
     margin-left: 50px;
     margin-right: 50px;
-    box-shadow: 0px 10px 30px var(--greyOne);
+    /*box-shadow: 0px 10px 30px var(--greyOne);*/
     gap: 20px;
   }
 
-  .newsletter_cta{
+  .newsletter_cta {
     max-width: initial;
     position: relative;
     min-inline-size: -webkit-fill-available;
@@ -95,58 +100,48 @@ utilizar: var(--nombredevar)*/
   .email_placeholder {
     margin: 0px 3px;
   }
-  
+
   .newsletter_cta button {
-    max-width: initial;
-    position: relative;
     min-inline-size: -webkit-fill-available;
     margin: 15%;
   }
-  .footer {
-    position: left;
-    margin: 0px !important;
-  }
-  /*PREGUNTAR COMO PONER A LA DERECHA EL FOOTER.*/
 
-  .simplifyText h1 {
+  /*PROJECTS HTML*/
+  .header_projects_page {
     display: flex;
     flex-direction: column;
   }
-  .headerText {
-    display: flex !important;
-    flex-direction: column !important;
+
+  .header_projects_page h1 {
+    display: flex;
+    flex-direction: column;
   }
-  .heroP {
+
+  .header_projects_page .hero_text {
     width: 100%;
   }
-  .contact button {
-    display: none;
-  }
-  .cards {
-    flex-direction: column;
-  }
-  .finalForm {
-    margin-left: 76px !important;
-    margin-top: 20px !important;
+
+  .card_image {
+    padding: 20px 20px;
   }
 
-  .inputInfo {
+  /*CONTACT PAGE */
+
+  .contact_us_header_page {
+    margin-left: 55px !important;  
+  }
+
+  .form_table{
     display: flex !important;
     flex-direction: column !important;
   }
-  /*
-  .I h4 {
-    background-color: white;
-  }*/
-  .I h4 {
-    background-color: white !important;
-  }
-
-  /* Specific Project */
-  .cardImg2 {
+  .email_phone_fields {
     display: flex;
     flex-direction: column;
+    
+    overflow: auto;
   }
+  
 }
 
 /*CLASES COMUNES */
@@ -454,22 +449,23 @@ form,
 
 /* CONTACT US PAGE => 3RD PAGE */
 
-.contact_us_header_page{
+.contact_us_header_page {
   margin-left: 65px;
   margin-top: 70px;
 }
 
-#contact_form{
+#contact_form {
   background-color: var(--lightTwo);
 }
 
-#field, #field_name {
+#field,
+#field_name {
   background-color: rgb(220, 226, 245);
   border: none;
   height: 50px;
 }
 
-#field{
+#field {
   width: 490px;
 }
 
@@ -484,14 +480,18 @@ form,
 }
 
 .email_phone_fields {
-  display: grid;
+  /* display: grid;
   grid-template-areas:
     "top_right top_left"
-    "bottom_right bottom_left";
-  justify-content: space-between;
-  text-align: left !important;
-  align-items: left;
-  gap: 10px;
+    "bottom_right bottom_left"; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.field_title {
+  display: flex;
+  flex-direction: column;
 }
 
 .write_your_message {
