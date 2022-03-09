@@ -18,41 +18,30 @@ utilizar: var(--nombredevar)*/
 }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 600px) {
-  .header {
-    width: 100%;
+@media only screen and (max-width: 414px) {
+
+  .nav_bar .nav_links{
     display: flex;
     flex-direction: column;
     align-items: stretch;
     text-align: center;
+    align-items: center;
   }
   ul {
-    margin-bottom: 4px;
-    margin-top: 3px;
+    padding-left: inherit;
   }
-  .logo1 {
+  .logo {
     display: none;
   }
-  .header .contact {
-    margin-top: 4px;
-  }
-  .heroSection {
-    margin: 0px 150px 0px 150px;
-    /*
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    margin-left:25%; */
-  }
-  .heroText {
-    display: flex;
-    flex-direction: column;
-    width: max-content;
-  }
+
+  .hero_section {
+    width: 75%;
+}
+
   .heroImg {
     display: none;
-  }
+  } 
+
   .clients {
     display: flex;
     flex-direction: column;
@@ -60,17 +49,18 @@ utilizar: var(--nombredevar)*/
     margin-left: 25%;
     margin-bottom: 20px;
   }
-  .google,
-  .microsoft,
-  .fedex,
-  .amazon {
-    margin-top: 30px;
+
+  .client_logos{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
   }
 
-  .recentProjects {
-    display: none;
-    /*text-align: center;
-  white-space: nowrap;*/
+  .client_logo {
+    margin: 15px 0px;
+  }
+
+  .recent-projects {
   }
   /*
 .hearClients {
@@ -83,24 +73,30 @@ utilizar: var(--nombredevar)*/
   .memojiI {
     display: none;
   }
-  .ourServices {
+  .our_services_and_projects{
     display: flex;
     flex-direction: column;
   }
-  .cards {
+  .service_cards_main_div {
     display: flex;
     flex-direction: column;
     margin-left: 50px;
     margin-right: 50px;
-    box-shadow: 20px 10px 30px var(--greyOne);
+    box-shadow: 0px 10px 30px var(--greyOne);
+    gap: 20px;
   }
-  .contactForm {
+
+  .newsletter_cta{
     max-width: initial;
     position: relative;
     min-inline-size: -webkit-fill-available;
-    margin: 2%;
+    margin: 0px;
   }
-  .box button {
+  .email_placeholder {
+    margin: 0px 3px;
+  }
+  
+  .newsletter_cta button {
     max-width: initial;
     position: relative;
     min-inline-size: -webkit-fill-available;
@@ -371,8 +367,8 @@ button {
 }
 .service_card_individuals {
   background-color: white;
-  height: 300px;
-  width: 320px;
+  height: 340px;
+  width: 340px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -445,77 +441,16 @@ form,
   justify-content: space-between;
 }
 
-
-.imgI {
-  /*
-  height: 600px;
-  width: 1040px;
-  margin: 20px 40px 20px 0px;
-  margin-right: 20px;*/
+.main_image {
   max-width: 100%;
   height: auto;
   margin: auto;
 }
-.cardImg img {
-  height: 200px;
-  width: 250px;
-}
-.IstProject,
-.IIndProject,
-.IIIrdProject {
-  display: flex;
-  flex-direction: column;
-  margin: 0px 100px 50px 100px;
-  box-shadow: 20px 10px 30px var(--greyOne);
-  justify-content: space-around;
-  height: 400px;
-  text-align: left !important;
-}
-.cardImg2 {
-  display: flex;
-  justify-content: space-around;
-  padding: 0px 40px;
-}
-.projectCard {
-  width: 240px;
-  height: 350px;
-  background-color: white;
-}
-.projectCardImg {
-  width: 100% !important;
-  height: 180px;
-}
-.projectContent {
-  padding: 10px;
-}
-/* .cardImg {
-  display: grid;
-  grid-template-areas:
-    "main mainI mainII"
-    "sub subI subII" "I II II" "l1 l2 l3";
-  justify-content: space-evenly;
-  gap: 10px;
-  text-align: left;
-  margin: 0 30px 60px 30px;
-  /*border: #072ac8 solid;
-  background-color: white; 
-}*/
-.cardImg h4 {
-  text-align: left;
-  margin-left: 0;
-  background-color: white;
-}
 
-/* .cardImg p {
-  font-weight: lighter !important;
-  background-color: white;
-} */
-
-/* .cardImg div {
-  margin-left: 0;
-  margin-bottom: 30px;
-  font-weight: lighter !important;
-} */
+.service_card_individuals .card_image {
+  height: 320px;
+  width: 340px;
+}
 
 /* CONTACT US PAGE => 3RD PAGE */
 
