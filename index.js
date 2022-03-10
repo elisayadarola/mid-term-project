@@ -22,3 +22,27 @@ async function showPosts(myData){
 
 getPosts()
 
+/* GRACIAS JERALD POR LA AYUDA*/
+let getInfoVisitor ="http://localhost:3000/messages"
+async function postInfoVisitor(event
+  ) {
+    event.preventDefault();
+  const data = {
+    fullname: document.querySelector("#field_name").value,
+    email:document.querySelector("#field").value,
+    phone:document.querySelector("#phone_field").value,
+    body:document.querySelector("#write_your_message").value,
+  };
+
+const info = await fetch(getInfoVisitor, {
+  method:"POST",
+  headers : {
+    "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
+const final_info_visitor = await info.json();
+console.log(final_info_visitor)
+}
+
+document.addEventListener('submit', postInfoVisitor);
