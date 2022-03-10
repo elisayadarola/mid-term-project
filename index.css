@@ -18,9 +18,11 @@ utilizar: var(--nombredevar)*/
 }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 414px) {
   /*HEADER SECTION */
-
+  .nav_bar {
+    margin-bottom: -70px;
+  }
   .nav_bar .nav_links {
     display: flex;
     flex-direction: column;
@@ -61,16 +63,26 @@ utilizar: var(--nombredevar)*/
   }
 
   .client_logos {
-    display: flex;
     flex-direction: column;
     width: 65%;
+    align-items: center;
   }
 
   .client_logo {
     margin: 15px 0px;
+    height: 40px;
+  }
+  .my_js_cards {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .memojiI {
+  .recent_projects {
+    margin-left: -30px;
+    text-align: justify;
+    white-space: nowrap;
+  }
+  .memoji {
     display: none;
   }
   .our_services_and_projects {
@@ -173,7 +185,7 @@ h2 {
   font-family: Roboto;
   margin-left: 70px;
   margin-top: 50px;
-  color: black;
+  color: var(--darkTwo);
 }
 h3 {
   font-size: 40px;
@@ -181,6 +193,9 @@ h3 {
   color: var(--darkTwo);
   background-color: var(--darkTwo);
   margin-top: 30px;
+}
+h4 {
+  font-size: 25px;
 }
 
 /*NAV-BAR*/
@@ -241,8 +256,8 @@ button {
 .hero_text {
   margin-bottom: 40px;
   font-size: 20px;
-  color: var(--greyOne) !important;
-  background-color: var(--lightTwo);
+  color: var(--greyOne);
+  /* background-color: var(--lightTwo); */
 }
 .see_our_work {
   background-color: #efeff3;
@@ -303,8 +318,6 @@ button {
 }
 .card_0 p, .card_1 p, .card_2 p {
   margin: 0px 30px;
-  font-weight: normal !important;
-
 }
 .card_0 a, .card_1 a, .card_2 a {
   margin: 0px 30px;
