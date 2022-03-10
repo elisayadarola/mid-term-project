@@ -39,8 +39,8 @@ utilizar: var(--nombredevar)*/
 
   /*FOOTER SECTION*/
   .footer {
-    position: left;
-    margin: 0px !important;
+    font-size: 10px;
+    margin: 15px !important;
     place-content: flex-end;
     align-items: center;
   }
@@ -151,12 +151,11 @@ utilizar: var(--nombredevar)*/
   .email_phone_fields {
     display: flex;
     flex-direction: column;
-    
     overflow: auto;
   }
   
 }
-
+/*------------------------------------------*/
 /*CLASES COMUNES */
 * {
   box-sizing: border-box;
@@ -191,7 +190,7 @@ h3 {
   font-size: 40px;
   font-weight: bold;
   color: var(--darkTwo);
-  background-color: var(--darkTwo);
+  /* background-color: var(--darkTwo); */
   margin-top: 30px;
 }
 h4 {
@@ -218,9 +217,8 @@ h4 {
 .nav_links li a:hover {
   color: var(--logoColor);
 }
-.nav_home {
-  color: var(--lightBlue);
-}
+
+.nav_home,
 .nav_projects,
 .nav_services {
   color: var(--greyOne);
@@ -412,7 +410,7 @@ button {
 .our_services_and_projects {
   color: var(--darkTwo);
   background-color: var(--lightTwo);
-  margin: 100px 0px 70px 80px;
+  margin: 50px 0px 70px 80px;
 }
 .service_cards_main_div h4,
 .cta_learn_more,
@@ -425,7 +423,7 @@ button {
 .service_cards_main_div {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .service_card_individuals {
   background-color: white;
@@ -442,6 +440,7 @@ button {
   width: 60px;
   background-color: var(--other);
   margin-left: 20px;
+  padding: 10px;
 }
 
 .cta_learn_more {
@@ -460,7 +459,7 @@ button {
   text-align: center;
   justify-content: space-around;
   height: 500px;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 .newsletter_cta button {
   height: 80px;
@@ -532,6 +531,9 @@ form,
   background-color: rgb(220, 226, 245);
   border: none;
   height: 50px;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  color:var(--greyOne)
 }
 
 #field {
@@ -549,10 +551,6 @@ form,
 }
 
 .email_phone_fields {
-  /* display: grid;
-  grid-template-areas:
-    "top_right top_left"
-    "bottom_right bottom_left"; */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -568,6 +566,12 @@ form,
   color: var(--greyOne);
   font-size: 20px;
   border: none;
+  font-family: Roboto, sans-serif;
+}
+
+#contact_form button {
+height: 50px;
+font-size: 20px;
 }
 
 /*AQUI COMIENZA EL FOOTER*/
