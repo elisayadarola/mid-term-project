@@ -20,9 +20,7 @@ utilizar: var(--nombredevar)*/
 /* MEDIA QUERIES */
 @media only screen and (max-width: 414px) {
   /*HEADER SECTION */
-  .nav_bar {
-    margin-bottom: -70px;
-  }
+  
   .nav_bar .nav_links {
     display: flex;
     flex-direction: column;
@@ -48,12 +46,25 @@ utilizar: var(--nombredevar)*/
   /*INDEX HTML*/
   .hero_section {
     width: 75%;
+    flex-wrap: wrap;
   }
 
   .heroImg {
-    display: none;
+    width: 100%;
   }
-
+  .hero_header {
+    display: flex;
+    flex-direction: column;
+  }
+  .getInTouch, .see_our_work {
+    align-self: self-start;
+  }
+ .hero_card_one {
+  display: none;
+ }
+ .hero_card_two {
+  display: none;
+ }
   .clients {
     display: flex;
     flex-direction: column;
@@ -106,7 +117,7 @@ utilizar: var(--nombredevar)*/
     margin: 0px;
   }
   .email_placeholder {
-    margin: 0px 3px;
+    margin: 0px 5px;
   }
 
   .newsletter_cta button {
@@ -225,6 +236,9 @@ h4 {
 
 .nav_links li a:hover {
   color: var(--logoColor);
+}
+.nav_home {
+  color:var(--lightBlue)
 }
 
 .nav_home,
