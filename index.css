@@ -18,9 +18,9 @@ utilizar: var(--nombredevar)*/
 }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 600px) {
   /*HEADER SECTION */
-  
+
   .nav_bar .nav_links {
     display: flex;
     flex-direction: column;
@@ -56,15 +56,16 @@ utilizar: var(--nombredevar)*/
     display: flex;
     flex-direction: column;
   }
-  .getInTouch, .see_our_work {
+  .getInTouch,
+  .see_our_work {
     align-self: self-start;
   }
- .hero_card_one {
-  display: none;
- }
- .hero_card_two {
-  display: none;
- }
+  .hero_card_one {
+    display: none;
+  }
+  .hero_card_two {
+    display: none;
+  }
   .clients {
     display: flex;
     flex-direction: column;
@@ -152,10 +153,10 @@ utilizar: var(--nombredevar)*/
   /*CONTACT PAGE */
 
   .contact_us_header_page {
-    margin-left: 55px !important;  
+    margin-left: 55px !important;
   }
 
-  .form_table{
+  .form_table {
     display: flex !important;
     flex-direction: column !important;
   }
@@ -164,7 +165,6 @@ utilizar: var(--nombredevar)*/
     flex-direction: column;
     overflow: auto;
   }
-  
 }
 /*-------------------------------------------------------------------------*/
 /*CLASES COMUNES */
@@ -215,15 +215,14 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:40px;
+  padding: 40px;
   position: fixed;
-  top:0;
+  top: 0;
   width: 100%;
-  z-index:10;
+  z-index: 10;
   background-color: var(--mustard);
   height: 15px;
 }
-
 
 .logo {
   cursor: pointer;
@@ -238,9 +237,8 @@ h4 {
   color: var(--logoColor);
 }
 .nav_home {
-  color:rgb(34, 78, 83);
+  color: rgb(34, 78, 83);
 }
-
 
 .nav_projects,
 .nav_services {
@@ -314,37 +312,46 @@ button {
   margin: 50px 65px;
 }
 /*JAVASCRIPT ELEMENTS */
-.recent_projects { 
+.recent_projects {
   margin-top: 100px;
 }
 .my_js_cards {
-  margin: 50px 0px 100px  0px;
+  margin: 50px 0px 100px 0px;
   display: flex;
   justify-content: space-evenly;
   gap: 18px;
 }
-.card_0, .card_1, .card_2 {
+.card_0,
+.card_1,
+.card_2 {
   display: grid;
   height: 450px;
   background-color: white;
 }
-.card_0 img, .card_1 img, .card_2 img{
+.card_0 img,
+.card_1 img,
+.card_2 img {
   height: 200px;
   width: 300px;
 }
-.card_0 h4, .card_1 h4, .card_2 h4 {
+.card_0 h4,
+.card_1 h4,
+.card_2 h4 {
   margin: 0px 30px;
   font-size: 25px;
-
 }
-.card_0 p, .card_1 p, .card_2 p {
+.card_0 p,
+.card_1 p,
+.card_2 p {
   margin: 0px 30px;
 }
-.card_0 a, .card_1 a, .card_2 a {
+.card_0 a,
+.card_1 a,
+.card_2 a {
   margin: 0px 30px;
   color: var(--logoColor);
   cursor: pointer;
-} 
+}
 
 /*CLIENT REVIEW */
 
@@ -375,26 +382,23 @@ button {
 }
 .emoji_one {
   position: absolute;
-  bottom: -1050px; 
-  left:20px;
+  bottom: -1050px;
+  left: 20px;
 }
-.emoji_two{
+.emoji_two {
   position: absolute;
   bottom: -1420px;
-  left:20px;
-  
+  left: 20px;
 }
 .emoji_three {
   position: absolute;
   bottom: -1050px;
   right: 20px;
-    
 }
 .emoji_four {
   position: absolute;
-    bottom: -1420px;
-    right: 20px;
-  
+  bottom: -1420px;
+  right: 20px;
 }
 /*WIDGET BOOKING.COM PROFILE*/
 
@@ -528,10 +532,13 @@ form,
 }
 
 .main_image {
-    height: 500px;
-    width: 100%;
-    margin-bottom: 60px;
-    box-shadow: rgba(143, 20, 155, 0.12) 0px 54px 55px, rgba(143, 20, 155, 0.12) 0px -12px 30px, rgba(143, 20, 155, 0.12) 0px 4px 6px, rgba(143, 20, 155, 0.12) 0px 12px 13px, rgba(143, 20, 155, 0.12) 0px -3px 5px;
+  height: 500px;
+  width: 100%;
+  margin-bottom: 60px;
+  box-shadow: rgba(143, 20, 155, 0.12) 0px 54px 55px,
+    rgba(143, 20, 155, 0.12) 0px -12px 30px,
+    rgba(143, 20, 155, 0.12) 0px 4px 6px, rgba(143, 20, 155, 0.12) 0px 12px 13px,
+    rgba(143, 20, 155, 0.12) 0px -3px 5px;
 }
 
 .service_card_individuals .card_image {
@@ -554,16 +561,18 @@ form,
 }
 
 #field,
-#field_name, #phone_field {
+#field_name,
+#phone_field {
   background-color: rgb(220, 226, 245);
   border: none;
   height: 50px;
   font-family: Roboto, sans-serif;
   font-size: 15px;
-  color:var(--greyOne)
+  color: var(--greyOne);
 }
 
-#field, #phone_field {
+#field,
+#phone_field {
   width: 490px;
 }
 
@@ -578,10 +587,9 @@ form,
 }
 
 .email_phone_fields {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .field_title {
   display: flex;
@@ -597,8 +605,8 @@ form,
 }
 
 #contact_form button {
-height: 50px;
-font-size: 20px;
+  height: 50px;
+  font-size: 20px;
 }
 
 /*AQUI COMIENZA EL FOOTER*/
