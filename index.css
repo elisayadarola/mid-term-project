@@ -382,22 +382,22 @@ button {
 }
 .emoji_one {
   position: absolute;
-  bottom: -1050px;
+  bottom: -700px;
   left: 20px;
 }
 .emoji_two {
   position: absolute;
-  bottom: -1420px;
+  bottom: -1050px;
   left: 20px;
 }
 .emoji_three {
   position: absolute;
-  bottom: -1050px;
+  bottom: -700px;
   right: 20px;
 }
 .emoji_four {
   position: absolute;
-  bottom: -1420px;
+  bottom: -1050px;
   right: 20px;
 }
 /*WIDGET BOOKING.COM PROFILE*/
