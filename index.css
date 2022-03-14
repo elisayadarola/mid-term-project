@@ -365,7 +365,7 @@ button {
   justify-content: center;
   background-color: var(--darkTwo);
   background-image: url("drive-download-20220304T160041Z-001/testimonial-section/orbit.png");
-  background-position: relative;
+  position: relative;
 }
 
 .client_reviews p {
@@ -379,25 +379,26 @@ button {
 .memoji {
   height: 150px;
   width: 150px;
+  display: flex;
 }
 .emoji_one {
   position: absolute;
-  bottom: -700px;
+  bottom: 400px; 
   left: 20px;
 }
 .emoji_two {
   position: absolute;
-  bottom: -1050px;
+  bottom: 50px; 
   left: 20px;
 }
 .emoji_three {
   position: absolute;
-  bottom: -700px;
+  bottom: 400px; 
   right: 20px;
 }
 .emoji_four {
   position: absolute;
-  bottom: -1050px;
+  bottom: 50px; 
   right: 20px;
 }
 /*WIDGET BOOKING.COM PROFILE*/
